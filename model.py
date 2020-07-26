@@ -38,7 +38,7 @@ schema = StructType([StructField("fixedAcidity", DoubleType(), True),
 # 1) sends metrics via the track_metric() method
 # 2) adds a unique identifier for tracking the outputs
 
-@cdsw.model_metrics
+# @cdsw.model_metrics
 def predict(args):
   split=args["feature"].split(";")
   features=[list(map(float,split[:11]))]

@@ -59,7 +59,7 @@ schema = StructType([
   StructField("Quality", StringType(), True)
 ])
 
-data_path = "s3a://mlamairesse/wine_dataset/data/"
+data_path = "/home/cdsw/data/"
 data_file = "WineNewGBTDataSet.csv"
 wine_data_raw = spark.read.csv(data_path+'/'+data_file, schema=schema,sep=';')
 wine_data_raw.show(3)

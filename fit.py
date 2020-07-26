@@ -16,9 +16,9 @@ cdsw.track_metric("impurity",param_impurity)
 """
 
 # Comment out when using experiments
-param_numTrees= 10
-param_maxDepth= 15
-param_impurity= "gini"
+param_numTrees= int(sys.argv[1])
+param_maxDepth=int(sys.argv[2])
+param_impurity=sys.argv[3]
 
 
 spark = SparkSession\
@@ -66,7 +66,7 @@ schema = StructType([StructField("fixedacidity", DoubleType(), True),
 
 
 #set path to data
-data_path = "s3a://mlamairesse/wine_dataset/data/"
+data_path = "/home/cdsw/data/"
 data_file = "WineNewGBTDataSet.csv"
 #data_path = "/tmp/wine_pred"
 #data_file = "WineNewGBTDataSet.csv"

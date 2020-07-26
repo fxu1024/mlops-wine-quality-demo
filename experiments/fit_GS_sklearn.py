@@ -10,14 +10,12 @@ import pandas as pd
 # ### Declare parameters
 import ast #required to in order to parse arguements a lists
 import sys
-param_numTrees= ast.literal_eval(sys.argv[1])
-param_maxDepth= ast.literal_eval(sys.argv[2])
+#param_numTrees= ast.literal_eval(sys.argv[1])
+#param_maxDepth= ast.literal_eval(sys.argv[2])
 
-'''
 # comment out when using experiments
 param_numTrees = [70,80,90]
 param_maxDepth = [5,10,15]
-'''
 
 
 # ### Load the data (From File )

@@ -141,3 +141,32 @@ ls
 cd site-packages/
 ls
 rm cdsw.py
+echo $PYSPARK3_PYTHON
+exit
+ls
+ls setup
+sh setup/setup.sh
+ls
+cd setup
+ll
+ls
+ls -l
+chmod 755 setup.sh
+ls -l
+ls /etc/spark/bin/
+python -verison
+python --verison
+python verison
+python -v
+python3
+ls
+git remote -v
+git commit -m "update on 2020-07-26 commit"
+git push -u origin master
+exit
+git remote -v
+git commit -v
+git diff
+git remote show
+git push -u origin master
+git branch -a
